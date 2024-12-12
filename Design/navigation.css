@@ -1,0 +1,69 @@
+.nav-cont{
+  position:fixed;
+  display: flex;
+  width: 100%;
+  height: 170px;
+  background-image: linear-gradient(#454545, #9a9a9a, #454545);
+  align-items: center;
+  justify-content: space-around;
+  z-index: 10;
+ flex-shrink: 1;
+}
+
+.logo-cont{
+  flex: 0.5;
+  height: inherit;
+  margin-left: 80px;
+}
+
+.logo-cont img{
+  height: inherit;
+  object-fit: contain;
+}
+
+.nav-title-cont{
+  flex: 2;
+  animation-name: mymove;
+  position: relative;
+  animation-duration: 5s;
+}
+@keyframes mymove {
+  from {left: 300px;}
+  to {left: 0px;}
+}
+
+.nav-title-cont p{
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 40px;
+  letter-spacing: 5px;
+  text-shadow: 5px 5px 3px rgb(186, 255, 57);
+  color: black;
+}
+
+.nav-buttons-cont{
+  flex: 3;
+  display: inline-flex;
+justify-content: space-around;
+
+}
+
+.nav-buttons-cont a{
+  font-size: 30px;
+  color: rgb(186, 255, 57);
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-style: normal;
+  text-shadow: 5px 5px 3px black;
+}
+
+.nav-buttons-cont a:hover{
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-color: black;
+  text-decoration-thickness: 5px;
+  text-decoration-style:solid ;
+}
